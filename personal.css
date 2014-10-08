@@ -142,7 +142,7 @@ div {
 }
 
 #my-name {
-	font-family: 'Amatic SC', cursive;
+	font-family: 'Amatic SC', sans-serif;
 	font-weight: bold;
 	font-size: 250%;
 	color: #FFF;
@@ -194,10 +194,11 @@ div {
 	z-index: 2;
 }
 #my-name-smaller {
-	font-family: 'Amatic SC', cursive;
+	font-family: 'Amatic SC', sans-serif;
 	font-size: 50px;
 	line-height: 50px;
 	border-bottom: 3px solid #fff;
+	margin-top: 0;
 }
 #my-profile {
 
@@ -208,8 +209,10 @@ div {
 }
 
 #box-inner {
+	margin-left: auto;
+	margin-right: auto;
 	padding: 50px;
-	padding-top: 80px;
+	padding-top: 90px;
 }
 
 #button-row {
@@ -235,62 +238,98 @@ div {
 	background-color: #fff;
 }
 
-/***** INITIATIVES *****/
-#my-initiatives {
-	position: relative;
+						/***** INITIATIVES *****/
+						#my-initiatives {
+							position: relative;
+						}
+
+						#i {
+							width: 90%;
+							margin-left: auto;
+							margin-right: auto;
+						}
+
+						#i1, #i2 {
+							min-width: 800px;
+							margin-bottom: 30px;
+							margin-left: auto;
+							margin-right: auto;
+						}
+
+						#img-i1 {
+							width: 200px;
+							height: auto;
+							display: inline-block;
+							position: relative;
+							margin-left: 10px;
+						}
+
+						#description-i1 {
+							display: inline-block;
+							position: relative;
+							width: 75%;
+							margin-left: 30px;
+							color: #6e6e6e;
+						}
+
+						#img-i2 {
+							width: 200px;
+							height: auto;
+							display: inline-block;
+							position: relative;
+						}
+
+						#description-i2 {
+							display: inline-block;
+							position: relative;
+							width: 75%;
+							margin-right: 30px;
+							color: #6e6e6e;
+							text-align: right;
+						}
+
+						/***** PORTFOLIO *****/
+						#my-portfolio {
+							position: relative;
+						}
+
+						.img-portfolio {
+							width: 100%;
+							height: auto;
+						}
+
+/****** WORKS *****/
+@media only screen {
+	.small-block-grid-3 > li {
+	    width: 33%;
+	    list-style: none; 
+	    display: inline-block;
+
+	}
+    .small-block-grid-3 > li:nth-of-type(1n) {
+      clear: none;
+  	}
+    .small-block-grid-3 > li:nth-of-type(3n+1) {
+      clear: both;
+  	}
 }
 
-#i {
-	width: 90%;
+.small-block-grid-3 {
+	padding: 0;
+}
+
+.img-grid {
+	width: 300px;
+	height: auto;
+	line-height: 0;
+	display: inline-block;
+	border: solid 4px white;
+	box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
+	transition: all 200ms ease-out;
+}
+
+#grid {
 	margin-left: auto;
 	margin-right: auto;
-}
-
-#i1, #i2 {
-	min-width: 800px;
-	margin-bottom: 30px;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-#img-i1 {
-	width: 200px;
-	height: auto;
-	display: inline-block;
-	position: relative;
-	margin-left: 10px;
-}
-
-#description-i1 {
-	display: inline-block;
-	position: relative;
 	width: 75%;
-	margin-left: 30px;
-	color: #6e6e6e;
-}
-
-#img-i2 {
-	width: 200px;
-	height: auto;
-	display: inline-block;
-	position: relative;
-}
-
-#description-i2 {
-	display: inline-block;
-	position: relative;
-	width: 75%;
-	margin-right: 30px;
-	color: #6e6e6e;
-	text-align: right;
-}
-
-/***** PORTFOLIO *****/
-#my-portfolio {
-	position: relative;
-}
-
-.img-portfolio {
-	width: 100%;
-	height: auto;
 }
