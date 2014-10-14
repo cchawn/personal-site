@@ -1,5 +1,5 @@
 /* ensures page takes up full screen */
-.wrapper {
+.my-wrapper {
 	width: 100%;
 	position: absolute;
 	left: 0px;
@@ -20,7 +20,7 @@ body {
 	color: #FFFFFF;
 }
 
-h1 {
+h1, #mine {
 	font-weight: normal;
 	font-size: 40px;
 	line-height: 50px;
@@ -39,6 +39,11 @@ a {
 	color: #00b1ac;
 }
 
+a:hover {
+	text-decoration: none;
+	color: #00b1ac;
+}
+
 html, html a {
     -webkit-font-smoothing: antialiased;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
@@ -46,14 +51,13 @@ html, html a {
 
 /***** NAV BAR ****/
 @media (max-width: 675px){
-	#menu {
+	#my-menu {
 		display: none;
 	}
-
 	/**** ADD A MINI MENU BUTTON FOR WHEN SCREEN IS TOO SMALL! ****/
 }
 
-#menu {
+#my-menu {
 	background-color: #00b1ac;
 	width: 100%;
 	position: fixed;
@@ -62,36 +66,38 @@ html, html a {
 	font-weight: bold;
 }
 
-#logo {
+#my-logo {
 	width: 100px;
 	height: auto;
+	padding-top: 5px;
 }
 
-.nav-bar {
+.my-nav-bar {
 	margin: 0 auto;
 	max-height: 60px;
 	overflow: hidden;
 	padding-right: 20px;
+	font-size: 12pt;
 }
 
-.nav-menu {
+.my-nav-menu {
 	font-size: 90%;
 	float: right;
 	display: block;
 	text-align: center;
 	padding-right: 8px;
 	padding-left: 8px;
-	padding-top: 5px;
+	padding-top: 15px;
 	color: #ffffff;
 }
 
-.nav-menu:hover{
+.my-nav-menu:hover{
 	float: right;
 	display: block;
 	text-align: center;
 	padding-right: 8px;
 	padding-left: 8px;
-	padding-top: 5px;
+	padding-top: 15px;
 	color: #000000;			/* CHANGE COLOUR WHEN WE HOVER OVER NAVIGATION ITEM */
 }
 
@@ -101,14 +107,14 @@ div {
 	overflow: hidden;
 }
 
-.container {
+.my-container {
 	width: 100%;
 	position: relative;
-	margin-top: -5px;
+	margin-top: -4px;
 }
 
 /***** HOME *****/
-.img-responsive {
+.my-img-responsive {
 	display: block;
 	width: 100%;
 	max-width: 100%;
@@ -116,7 +122,7 @@ div {
 	z-index: -1;
 }
 
-#intro {
+#my-intro {
 	width: 100%;
 	top: 30%;
 	position: absolute;
@@ -125,18 +131,18 @@ div {
 	z-index: 1;
 }
 
-#intro-text {
+#my-intro-text {
 	width: 800px;
 	margin-left: auto;
 	margin-right: auto;
 	padding: 20px;
 	text-align: center;
-	font-size: 160%;
+	font-size: 19pt;
 	color: #FFF;
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: rgba(0, 0, 0, 0.6);
 }
 
-#big-text {
+#my-big-text {
 	font-size: 200%;
 	color: #FFF;
 }
@@ -148,17 +154,19 @@ div {
 	color: #FFF;
 }
 
-#highlight {
+#my-highlight {
 	color: #00b1ac;
 }
 
 /***** ABOUT ME *****/
 
-#about-me {
+#my-about-me {
 	white-space: nowrap;
+	background-color: rgba(0, 0, 0, 0.6)
+
 }
 
-.box {
+.my-box {
 	display: inline-block;
 	position: relative;
 	padding: 0;
@@ -169,11 +177,10 @@ div {
 	margin: 0;
 }
 
-#box-left {
-	background-color: rgba(0, 0, 0, 0.6)
+#my-box-left {
 }
 
-.container-profile {
+.my-container-profile {
 	display: block;
 	width: 100%;
 	margin: 5px auto;
@@ -183,7 +190,7 @@ div {
 	text-align: center;
 }
 
-.img-circle {
+.my-img-circle {
 	border: 5px solid #b1b2b4;
 	border-radius: 100%;
 	box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.2);
@@ -204,23 +211,24 @@ div {
 
 }
 
-#box-right {
-	background-color: rgba(0, 0, 0, 0.8);
+#my-box-right {
+	background-color: rgba(0, 0, 0, 0.4);
 }
 
-#box-inner {
+#my-box-inner {
 	margin-left: auto;
 	margin-right: auto;
 	padding: 50px;
 	padding-top: 90px;
+	font-size: 14pt;
 }
 
-#button-row {
+#my-button-row {
 	padding-left: 50px;
 	height: 40px;
 }
 
-.button {
+.my-button {
 	padding: 12px 20px;
 	margin-right: 10px;
 	font-size: 15px;
@@ -233,103 +241,63 @@ div {
 	transition: all .2s ease-in-out;
 }
 
-.button:hover {
+.my-button:hover {
 	color: #000;
 	background-color: #fff;
 }
 
-						/***** INITIATIVES *****/
-						#my-initiatives {
-							position: relative;
-						}
-
-						#i {
-							width: 90%;
-							margin-left: auto;
-							margin-right: auto;
-						}
-
-						#i1, #i2 {
-							min-width: 800px;
-							margin-bottom: 30px;
-							margin-left: auto;
-							margin-right: auto;
-						}
-
-						#img-i1 {
-							width: 200px;
-							height: auto;
-							display: inline-block;
-							position: relative;
-							margin-left: 10px;
-						}
-
-						#description-i1 {
-							display: inline-block;
-							position: relative;
-							width: 75%;
-							margin-left: 30px;
-							color: #6e6e6e;
-						}
-
-						#img-i2 {
-							width: 200px;
-							height: auto;
-							display: inline-block;
-							position: relative;
-						}
-
-						#description-i2 {
-							display: inline-block;
-							position: relative;
-							width: 75%;
-							margin-right: 30px;
-							color: #6e6e6e;
-							text-align: right;
-						}
-
-						/***** PORTFOLIO *****/
-						#my-portfolio {
-							position: relative;
-						}
-
-						.img-portfolio {
-							width: 100%;
-							height: auto;
-						}
-
+					
 /****** WORKS *****/
-@media only screen {
-	.small-block-grid-3 > li {
-	    width: 33%;
-	    list-style: none; 
-	    display: inline-block;
 
-	}
-    .small-block-grid-3 > li:nth-of-type(1n) {
-      clear: none;
-  	}
-    .small-block-grid-3 > li:nth-of-type(3n+1) {
-      clear: both;
-  	}
+#my-work {
+	background-color: rgba(0, 0, 0, 0.8);
 }
 
-.small-block-grid-3 {
-	padding: 0;
+/****** BOOTSTRAP - CAROSEL TEMPLATE *******/
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 80px 0; /* Space out the Bootstrap <hr> more */
 }
 
-.img-grid {
-	width: 300px;
-	height: auto;
-	line-height: 0;
-	display: inline-block;
-	border: solid 4px white;
-	box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
-	transition: all 200ms ease-out;
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
 }
 
-#grid {
-	margin-left: auto;
-	margin-right: auto;
-	width: 75%;
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+
+  .featurette-heading {
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 120px;
+  }
+}
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: normal;
+}
+.marketing .col-lg-4 p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+/****** CONTACT *****/
+#my-contact-me {
+	background-color: rgba(0, 0, 0, 0.8);
 }
