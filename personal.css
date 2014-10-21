@@ -54,6 +54,17 @@ html, html a {
 	#my-menu {
 		display: none;
 	}
+
+	#my-menu-smaller {
+		background-color: #00b1ac;
+		width: 100%;
+		position: fixed;
+		top: 0;
+		z-index: 100;
+		font-weight: bold;
+		height: 50px;
+		padding-left: 40px;
+	}
 	/**** ADD A MINI MENU BUTTON FOR WHEN SCREEN IS TOO SMALL! ****/
 }
 
@@ -137,13 +148,13 @@ div {
 	margin-right: auto;
 	padding: 20px;
 	text-align: center;
-	font-size: 19pt;
+	font-size: 21pt;
 	color: #FFF;
 	background-color: rgba(0, 0, 0, 0.6);
 }
 
 #my-big-text {
-	font-size: 200%;
+	font-size: 40pt;
 	color: #FFF;
 }
 
@@ -204,7 +215,6 @@ div {
 	font-family: 'Amatic SC', sans-serif;
 	font-size: 50px;
 	line-height: 50px;
-	border-bottom: 3px solid #fff;
 	margin-top: 0;
 }
 #my-profile {
@@ -251,6 +261,13 @@ div {
 
 #my-work {
 	background-color: rgba(0, 0, 0, 0.8);
+}
+
+.work-link {
+	color: #FFF;
+}
+.work-link:hover {
+	color: #00B1AC;
 }
 
 /****** BOOTSTRAP - CAROSEL TEMPLATE *******/
@@ -300,4 +317,10 @@ div {
 /****** CONTACT *****/
 #my-contact-me {
 	background-color: rgba(0, 0, 0, 0.8);
+}
+#contact-me {
+	font-size: 20pt;
+}
+#contact-info {
+	color: #00b1ac;
 }
