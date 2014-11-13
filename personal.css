@@ -257,16 +257,16 @@ div {
 }
 
 					
-/****** WORKS *****/
+/****** EXPERIENCE *****/
 
-#my-work {
+#my-exp {
 	background-color: rgba(0, 0, 0, 0.8);
 }
 
-.work-link {
+.exp-link {
 	color: #FFF;
 }
-.work-link:hover {
+.exp-link:hover {
 	color: #00B1AC;
 }
 
