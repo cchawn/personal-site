@@ -71,7 +71,8 @@ html, html a {
 		background: -o-linear-gradient(top,  #00b1ac 0%,#00a0a0 100%); /* Opera 11.10+ */
 		background: -ms-linear-gradient(top,  #00b1ac 0%,#00a0a0 100%); /* IE10+ */
 		background: linear-gradient(to bottom,  #00b1ac 0%,#00a0a0 100%); /* W3C */
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00b1ac', endColorstr='#00a0a0',GradientType=0 ); /* IE6-9 */		width: 100%;
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00b1ac', endColorstr='#00a0a0',GradientType=0 ); /* IE6-9 */
+		width: 100%;
 		position: fixed;
 		top: 0;
 		z-index: 100;
