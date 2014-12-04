@@ -9,6 +9,8 @@
 
 body {
 	background-image: url("./images/wavegrid.png");
+	width: 100%;
+    height: 100%;
 }
 
 /***** FONTS *****/
@@ -21,6 +23,7 @@ body {
 }
 
 h1, #mine {
+	text-transform: uppercase;
 	font-weight: normal;
 	font-size: 40px;
 	line-height: 50px;
@@ -82,6 +85,10 @@ html, html a {
 	}
 	/**** ADD A MINI MENU BUTTON FOR WHEN SCREEN IS TOO SMALL! ****/
 }
+#my-nav {
+	border: 0 none;
+
+}
 
 #my-logo {
 	width: 80px;
@@ -107,6 +114,7 @@ div {
 	max-width: 100%;
 	height: auto;
 	z-index: -1;
+
 }
 
 #my-intro {
@@ -144,6 +152,7 @@ div {
 #my-highlight {
 	color: #00b1ac;
 }
+
 
 /***** ABOUT ME *****/
 
@@ -232,11 +241,12 @@ div {
 	background: -ms-linear-gradient(top,  #00b1ac 0%,#00a0a0 100%); /* IE10+ */
 	background: linear-gradient(to bottom,  #00b1ac 0%,#00a0a0 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00b1ac', endColorstr='#00a0a0',GradientType=0 ); /* IE6-9 */
+	opacity: 1.0;
 }
 
 .my-button:hover {
 	color: #000;
-	background: #fff;
+	opacity: 0.6;
 }
 
 					
@@ -262,6 +272,9 @@ div {
 
 .featurette-divider {
   margin: 80px 0; /* Space out the Bootstrap <hr> more */
+  color: #505050; /* IE */
+  background-color: #505050; /* Firefox and Opera */
+  border-color: #505050; /* Chrome and Safari */
 }
 
 /* Thin out the marketing headings */
@@ -313,14 +326,7 @@ div {
 
 /***** FOOTER *****/
 #footer {
-	background: #00b1ac; /* Old browsers */
-	background: -moz-linear-gradient(top,  #00b1ac 0%, #00a0a0 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#00b1ac), color-stop(100%,#00a0a0)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  #00b1ac 0%,#00a0a0 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  #00b1ac 0%,#00a0a0 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  #00b1ac 0%,#00a0a0 100%); /* IE10+ */
-	background: linear-gradient(to bottom,  #00b1ac 0%,#00a0a0 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00b1ac', endColorstr='#00a0a0',GradientType=0 ); /* IE6-9 */
+	background-color: #222;
 }
 
 .my-footer {
@@ -354,11 +360,11 @@ div {
 
 .social-img{
 	cursor: pointer;
+	opacity: 0.6;
+	width: 30px;
+	height: auto;
 }
 
 .social-img:hover{
-	-moz-box-shadow: 0 0 10px #ccc;
-	-webkit-box-shadow: 0 0 10px #ccc;
-	box-shadow: 0 0 10px #ccc;
-	border-radius: 100px
+	opacity: 1.0;
 }
