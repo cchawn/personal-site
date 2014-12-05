@@ -1,23 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
-<!-- Personal Page -->
 <head>
-	<title>Christina Chan</title>
-	<meta charset="UTF-8"/>
-	<link rel="stylesheet" href="./css/bootstrap.min.css">
-	<link rel="stylesheet" href="./css/personal.css"/>
-	<link rel="shortcut icon" href="./images/spaceWhale.png" typ="img/png" sizes="32x32">
-	<link href='http://fonts.googleapis.com/css?family=Quicksand:300,400,700' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'>
-	
-	<!-- add meta data -->
-	<meta name="description" content="My name is Christina Chan. I like coding, whales, space and spacewhales. This is my website.">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="My name is Christina Chan. I like coding, whales, space and spacewhales. This is my website.">
+    <meta name="author" content="Christina Chan">
+
+    <title>Christina Chan</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="./css/personal.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="./font-awesome-4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Quicksand:300,400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./images/spaceWhale.png" typ="img/png" sizes="32x32">
+
 </head>
 
-<body><div class="my-wrapper">
-	<!-- Navigation -->
-    <nav id = "my-nav" class="navbar navbar-inverse navbar-fixed-top" role="navigation" style="font-weight: bold;">
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav id = "my-nav" class="navbar navbar-inverse navbar-fixed-top" role="navigation" style="font-weight: bolder;">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -48,132 +61,144 @@
         <!-- /.container -->
     </nav>
 
-	<!-- MAIN CONTENT -->
+    <!-- Intro Header -->
+    <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1 class="brand-heading">Christina Chan</h1>
+                        <p class="intro-text">Software Design Student | VPUA COMPSA<br>High Functioning Caffeine Addict</p>
+                        <a href="#about" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated" style="color: #fff;"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
 
-	<div class="my-container" id="intro">
-		<img src="./images/disneyMagicKingdom1.jpg" class="my-img-responsive">
-		<div id="my-intro">
-			<div id="my-intro-text">
-			<span id="my-big-text">Hi! I'm <span id="my-name">Christina Chan</span></span></br>
-			a third year <span id="my-highlight">Software Design Student</span> at Queen's University.
-			I have experience in team leadership, project design, and teaching. 
-			I strive to make a lasting impact in my community through student advocacy, and I also like <a href="http://www.urbandictionary.com/define.php?term=Space%20Whale">space whales</a>.
-			</div>
-		</div>
-	</div>
+    <!-- About Section -->
+    <section id="about" class="container content-section">
+        <h1>about me</h1>
+        <hr class="smaller colored">
+        <br>
+        <br>
+        <div class="container wow fadeIn animated" style="visibility: visible; -webkit-animation: fadeIn;">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="assets/img/creative/about.jpg" class="img-responsive" alt="">
+                </div>
+                <div class="col-md-6 text-center">
+                    <h3 class="tagline">Hi, I'm Christina Chan</h3>
+                    <hr class="smaller colored" style="max-width: 300px;">
+                    <p>I love coding, space and whales. (Spacewhales!)<br>I'm a third year Software Design Student at Queen's.<br>I have experience in team leadership, project development, and teaching.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-	<div class="my-container"><div id="my-about-me">
-		<a id="about"></a><h1 id="mine">ABOUT ME</h1>
-		<div class="my-box" id="my-box-left">
-			<div class="my-container-profile">
-				<img src="./images/profile.jpg" class="my-img-circle">
-				<h2 id="my-name-smaller">Christina Chan</h2>
-			</div>
-		</div>
-		<div class="my-box" id="my-box-right">
-			<div id="my-box-inner">
-				<br>
-				<br>
-				Hi! I'm Christina Chan, a third year Software Design student at Queen’s University. I'm looking to enhance my education with a 12-month internship beginning in May 2015.
-				<br>
-				<br>
-				While pursuing my degree, I have gained three years of experience working in design project groups, requiring both individual and team-based work. Outside of class I work on learning as many new programming languages as possible. I love learning about, and contributing to open-source projects! I also have a passion for student affairs, and have been involved in student government since my first year at Queen’s.   
-			</div>
-			<div id="my-button-row">
-				<a href="#contact" class="my-button">Let's Chat</a>
-				<a href="./docs/resume.pdf" class="my-button">Download Resume</a>
-			</div>
-		</div>
-	</div></div>
+    <!-- Experience Section -->
+    <section id="exp" class="container content-section">
+        <h1>experience</h1>
+        <hr class="smaller colored">
+        <div class="container marketing">
+              <div class="row featurette">
+                <div class="col-md-7">
+                  <h2 class="featurette-heading"><a href="http://compsa.queensu.ca/" class="exp-link">Vice President University Affairs</a> <br><span class="text-muted">Queen's Computing Students' Association</span></h2>
+                  <p class="lead">In this role I have gained invaluable leadership and management experience. I represent the Association and all Queen's computing undergraduate students to external bodies at the university. I also manage the Association’s web and social-media presence, and oversee our student run web-development service.</p>
+                </div>
+                <div class="col-md-5">
+                  <img class="featurette-image img-responsive" src="./images/compsa_1.png" alt="COMPSA Logo">
+                </div>
+            </div>
 
-	<div class="my-container" id="my-exp">
-		<a id="exp"></a><h1>EXPERIENCE</h1>
-		<div class="container marketing">
-			<hr class="featurette-divider">
+            <hr class="featurette-divider">
 
-		      <div class="row featurette">
-		        <div class="col-md-7">
-		          <h2 class="featurette-heading"><a href="http://compsa.queensu.ca/" class="exp-link">Vice President University Affairs</a> <br><span class="text-muted">Queen's Computing Students' Association</span></h2>
-		          <p class="lead">In this role I have gained invaluable leadership and management experience. I represent the Association and all Queen's computing undergraduate students to external bodies at the university. I also manage the Association’s web and social-media presence, and oversee our student run web-development service.</p>
-		        </div>
-		        <div class="col-md-5">
-		          <img class="featurette-image img-responsive" src="./images/compsa_1.png" alt="COMPSA Logo">
-		        </div>
-		      </div>
+            <div class="row featurette">
+                <div class="col-md-5">
+                  <img class="featurette-image img-responsive" src="./images/crest_1.png" alt="Computing Crest">
+                </div>
+                <div class="col-md-7">
+                  <h2 class="featurette-heading"><a href="http://queensu.ca/orientation/findyourweek/facultyorientation/computing.html" class="exp-link">Logistics Coordinator</a> <br><span class="text-muted">Queen's Computing Orientation</span></h2>
+                  <p class="lead">I was one of seven students hired to organize the Queen’s Computing Orientation Program. I managed program scheduling, event planning, and sponsorship ventures. I also created and ran engaging training sessions for a team of 34 Student Leaders.</p>
+                </div>
+            </div>
 
-		    <hr class="featurette-divider">
+            <hr class="featurette-divider">
 
-			<div class="row featurette">
-		        <div class="col-md-5">
-		          <img class="featurette-image img-responsive" src="./images/crest_1.png" alt="Computing Crest">
-		        </div>
-		        <div class="col-md-7">
-		          <h2 class="featurette-heading"><a href="http://queensu.ca/orientation/findyourweek/facultyorientation/computing.html" class="exp-link">Logistics Coordinator</a> <br><span class="text-muted">Queen's Computing Orientation</span></h2>
-		          <p class="lead">In this role, I was part of the team that organized the Queen’s Computing Orientation Program. I managed program scheduling, event planning, and sponsorship ventures. I also created and ran engaging training sessions for a team of 34 Student Leaders.</p>
-		        </div>
-		      </div>
+            <div class="row featurette">
+                <div class="col-md-7">
+                  <h2 class="featurette-heading"><a href="http://cckgames.com/" class="exp-link">Gravity Switch</a> <br><span class="text-muted">Flip Derp. Switch Derp.</span></h2>
+                  <p class="lead">I worked with a team including two other students to develop a platforming video game. We used Unity Game Engine as the development environment and C# for related scripts. I created all visual elements in the game.
+                  <br>
+                  Play it <a href="http://cckgames.com/">here</a>!</p>
+                </div>
+                <div class="col-md-5">
+                  <img class="featurette-image img-responsive" src="./images/gravity_1.png" alt="Gravity Switch Image">
+                </div>
+            </div>
 
-			<hr class="featurette-divider">
+             <hr class="featurette-divider">
+        </div>
+    </section>
 
-			<div class="row featurette">
-		        <div class="col-md-7">
-		          <h2 class="featurette-heading"><a href="http://cckgames.com/" class="exp-link">Gravity Switch</a> <br><span class="text-muted">Flip Derp. Switch Derp.</span></h2>
-		          <p class="lead">Worked with a team including two other students to develop a platforming video game. We used Unity Game Engine as the development environment and C# for related scripts. I created all visual elements in the game.
-		          <br>
-		          Play it <a href="http://cckgames.com/" class="exp-link" id="link">here</a>!</p>
-		        </div>
-		        <div class="col-md-5">
-		          <img class="featurette-image img-responsive" src="./images/gravity_1.png" alt="Gravity Switch Image">
-		        </div>
-		      </div>
+    <!-- Contact Section -->
+    <div class="contact">
+    <section id="contact" class="container content-section text-center">
+        <h1 style="color: #fff;">contact me</h1>
+        <hr class="smaller colored">
+        <br>
+        <br>
+        <p>I'm currently looking for a 12 or 16-month internship!<br>I'd love to hear from you.</p> 
+        <div class="row" style="padding-top: 100px; padding-bottom: 100px; font-size: 30px;">
+            <div class="col-md-6 contact-details">
+                <h4><i class="fa fa-phone" style="color: #fff;"></i> Call</h4>
+                <p style="color: #00b1ac;">705 761 9541</p>
+            </div>
+            <div class="col-md-6 contact-details">
+                <h4><i class="fa fa-envelope" style="color: #fff;"></i> Email</h4>
+                <p><a href="mailto:c.chan@queensu.ca">c.chan@queensu.ca</a>
+                </p>
+            </div>
+        </div>
+    </section>
+    </div>
 
-		     <hr class="featurette-divider">
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <div class="row social">
+                <div class="col-lg-12">
+                    <ul class="list-inline">
+                        <li><a href="https://github.com/cchawn"><i class="fa fa-github fa-fw fa-2x" style="color: #fff;"></i></a>
+                        </li>
+                        <li><a href="https://twitter.com/cchawn"><i class="fa fa-twitter fa-fw fa-2x" style="color: #fff;"></i></a>
+                        </li>
+                        <li><a href="http://ca.linkedin.com/in/christinavchan"><i class="fa fa-linkedin fa-fw fa-2x" style="color: #fff;"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row copyright">
+                <div class="col-lg-12">
+                    <p>&copy; 2014 Christina Chan. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-
-		</div>
-	</div>
-
-	<div class="my-container"><div id="my-contact-me">
-		<a id="contact"></a><h1>CONTACT</h1>
-
-		<div class="container marketing">
-			<br>
-			<br>
-			<div class="row featurette">
-		        <div class="col-md-5">
-		          <img class="featurette-image img-responsive" src="./images/paperplane.png" alt="Generic placeholder image">
-		        </div>
-		        <div class="col-md-7">
-		          <h2 class="featurette-heading">I want to hear from you, <br><span class="text-muted"> let's chat!</span></h2>
-		          <p class="lead" id ="contact-me">
-		          	Email: <a href="mailto:c.chan@queensu.ca?Subject=I%20Like%20Space%20Whales%20Too!">c.chan@queensu.ca</a>
-		          	<br>
-		          	Call: <span id="contact-info">705 761 9541</span>
-		          </p>
-		        </div>
-		      </div>
-		      <br>
-		      <br>
-		</div>
-	</div></div>
-
-	<div class="my-container" id="footer"><div class="my-footer">
-		<div class="social-icons">
-			<ul>
-				<li><a href="https://github.com/cchawn"><img class="social-img" src="./images/github.png"></a></li>
-				<li><a href="http://ca.linkedin.com/in/christinavchan"><img class="social-img" src="./images/linkedin.png"></a></li>
-				<li><a href="https://twitter.com/cchawn"><img class="social-img" src="./images/twitter.png"></a></li>
-			</ul>
-		</div>
-		<p>&copy; 2014 Christina Chan. All Rights Reserved.</p>
-	</div></div>
-</div>
-
-	<!-- jQuery -->
+    <!-- jQuery -->
     <script src="./js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="./js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="./js/jquery.easing.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="./js/personal.js"></script>
 
 </body>
 
