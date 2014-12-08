@@ -47,13 +47,13 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav" style="float: right">
                     <li>
-                        <a href="#about">ABOUT</a>
+                        <a href="#about" class="page-scroll">ABOUT</a>
                     </li>
                     <li>
-                        <a href="#exp">EXPERIENCE</a>
+                        <a href="#exp" class="page-scroll">EXPERIENCE</a>
                     </li>
                     <li>
-                        <a href="#contact">CONTACT</a>
+                        <a href="#contact" class="page-scroll">CONTACT</a>
                     </li>
                 </ul>
             </div>
@@ -126,7 +126,7 @@
                     <i class="fa fa-gavel fa-4x"></i>
                     <h3>Vice President</h3>
                     <p>I represent all computing undergraduate students at the university. I also manage our student run web-development service.</p>
-                    <button type="button" class="btn btn-sm my-btn">More</button>
+                    <button type="button" class="btn btn-sm my-btn" data-toggle="collapse" data-target="#vpua">More</button>
                 </div>
             </div>
             <div class="col-md-3 col-sm-6">
@@ -134,7 +134,7 @@
                     <i class="fa fa-list-ol fa-4x"></i>
                     <h3>Logistics Coordinator</h3>
                     <p>Planned the Queen's Computing Orientation Program 2014. I managed program scheduling, event planning, and sponsorship ventures.</p>
-                    <button type="button" class="btn btn-sm my-btn">More</button>
+                    <button type="button" class="btn btn-sm my-btn" data-toggle="collapse" data-target="#logs">More</button>
                 </div>
             </div>
             <div class="col-md-3 col-sm-6">
@@ -142,7 +142,7 @@
                     <i class="fa fa-mortar-board fa-4x"></i>
                     <h3>Teaching Assistant</h3>
                     <p>I currently TA a Web and Mobile Applications course, and last year I was the TA for Elementary Computer Animations.</p>
-                    <button type="button" class="btn btn-sm my-btn">More</button>
+                    <button type="button" class="btn btn-sm my-btn" data-toggle="collapse" data-target="#ta">More</button>
                 </div>
             </div>
             <div class="col-md-3 col-sm-6">
@@ -150,14 +150,29 @@
                     <i class="fa fa-laptop fa-4x"></i>
                     <h3>IT Support</h3>
                     <p>I provide technical support for student run organization at Queen's, self-teaching the necessary skills along the way!</p>
-                    <button type="button" class="btn btn-sm my-btn">More</button>
+                    <button type="button" class="btn btn-sm my-btn" data-toggle="collapse" data-target="#it">More</button>
                 </div>
             </div>
         </div>
     </div>
+
+    <!-- write some thangs -->
+    <div class="container content-section text-center">
+        <div class="collapse" id="vpua">
+            <h2>Vice President</h2>
+        </div>
+        <div class="collapse" id="logs">
+            <h2>Logistics Coordinator</h2>
+        </div>
+        <div class="collapse" id="ta">
+            <h2>Teaching Assistant</h2>
+        </div>
+        <div class="collapse" id="it">
+            <h2>IT Support</h2>
+        </div>
     </section>
 
-    <!-- Portfolio Section -->
+    <!-- Experience - More Info Section -->
     <section id="portfolio" class="container content-section text-center">
         <h1>Portfolio</h1>
         <hr class="smaller colored">
