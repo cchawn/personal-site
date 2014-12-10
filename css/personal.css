@@ -312,7 +312,7 @@ header {
 }
 
 #about {
-    padding-bottom: 100px;
+    padding-bottom: 50px;
     padding-top: 100px;
 }
 
@@ -394,6 +394,16 @@ header {
     color: #00B1AC;
 }
 
+.more-info {
+    padding-left: 50px;
+}
+
+@media(min-width:610px) {
+    .more-info {
+        padding-left: 100px;
+    }
+}
+
 /***** PORTFOLIO *****/
 #portfolio {
     padding-bottom: 100px;
@@ -427,14 +437,14 @@ footer p {
     color: #fff;
 }
 
-footer li {
+.icon li {
     opacity: .6;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
 }
 
-footer li:hover {
+.icon li:hover {
     opacity: 1;
 }
 
