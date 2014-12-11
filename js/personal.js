@@ -22,3 +22,17 @@ $(function() {
 $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
+
+// thumbnail and caption drop down
+$( document ).ready(function() {
+    $("[rel='tooltip']").tooltip();    
+ 
+    $('.thumbnail').hover(
+        function(){
+            $(this).find('.caption').slideDown(250); //.fadeIn(250)
+        },
+        function(){
+            $(this).find('.caption').slideUp(250); //.fadeOut(205)
+        }
+    ); 
+});
