@@ -3,7 +3,7 @@ body {
     height: 100%;
     background-color: #fff;
     font-size: 16px;
-    font-weight: 300;
+    font-weight: 500;
 }
 
 html {
@@ -441,6 +441,11 @@ header {
     font-size: 30px;
     color: #fff;
     font-weight: 500;
+}
+
+/* enable dropdown on hover and toggle*/
+.dropdown:hover .dropdown-menu {
+    display: block;
 }
 
 /***** FOOTER *****/
