@@ -102,11 +102,6 @@ h1 {
 #my-logo {
     width: 80px;
     height: auto;
-    opacity: 0.7;
-}
-
-#my-logo:hover {
-    opacity: 1;
 }
 
 /***** INTRO *****/
@@ -221,7 +216,7 @@ header {
     -moz-animation-timing-function: linear;
 }
 
-@-webkit-keyframes pulse {    
+@-webkit-keyframes pulse {
     0 {
         -webkit-transform: scale(1);
         transform: scale(1);
@@ -238,7 +233,7 @@ header {
     }
 }
 
-@-moz-keyframes pulse {    
+@-moz-keyframes pulse {
     0 {
         -moz-transform: scale(1);
         transform: scale(1);
@@ -410,7 +405,7 @@ header {
     position:relative;
     overflow:hidden;
 }
- 
+
 .caption {
     position:absolute;
     top:0;
@@ -440,8 +435,8 @@ header {
     font-weight: 500;
 }
 
-/* enable dropdown on hover and toggle*/
-.dropdown:hover .dropdown-menu {
+/* enable dropdown on toggle*/
+.dropdown:active .dropdown-menu {
     display: block;
 }
 
@@ -470,7 +465,7 @@ footer p {
 }
 
 .contact-details {
-    padding: 50px; 
+    padding: 50px;
 }
 
 ::-moz-selection {
