@@ -1,0 +1,7 @@
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^christina\.codes$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.christina\.codes$
+RewriteRule ^blog$ "http\:\/\/blog\.christina\.codes\/" [R=301,L]
+
+Options -Indexes
+
