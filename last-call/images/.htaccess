@@ -1,0 +1,2 @@
+AuthName "Images"
+AuthUserFile "/home/cchawnco/.htpasswds/public_html/christina.codes/last-call/images/passwd"

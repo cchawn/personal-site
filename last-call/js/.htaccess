@@ -1,0 +1,2 @@
+AuthName "JS"
+AuthUserFile "/home/cchawnco/.htpasswds/public_html/christina.codes/last-call/js/passwd"
