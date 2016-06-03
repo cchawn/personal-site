@@ -1,0 +1,91 @@
+/* COLOUR SCHEME
+ * "black" - #121515
+ * "white" - #F7FCFC
+ * light blue - #B7D8D8
+ * purple - #b7c9db
+ * green - #b7dbc9
+ * yellow - #FFEA59 - rgb(255, 234, 89)
+ */
+
+* {
+	font-family: 'Raleway', 'Helvetica-Neue', Helvetica, Arial, sans-serif;
+}
+
+body{
+	background: #B7D8D8;
+	background-image: url("http://www.transparenttextures.com/patterns/inspiration-geometry.png");
+}
+
+h1{ font-family: 'Clicker Script', cursive; font-size: 100px; color: #F7FCFC;}
+p{ font-size: 24px; font-weight: 400; color: #F7FCFC;}
+
+.centered{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 80%;
+}
+
+.padding{
+	padding:10px;
+}
+
+.primary-btn{
+	background: #B7B7B7;
+	color: #F7FCFC;
+	font-size: 16px;
+	-webkit-transition: all ease 0.3s;
+	-moz-transition: all ease 0.3s;
+	-ms-transition: all ease 0.3s;
+	-o-transition: all ease 0.3s;
+	transition: all ease 0.3s;
+}
+
+.primary-btn:hover,
+.primary-btn:focus,
+.primary-btn:active{
+	color: #121515;
+}
+
+#giphy img{
+	max-width: 400px;
+	height: auto;
+}
+
+footer{
+	/*background: #B7B7B7;*/
+	position:absolute;
+	bottom:0;
+	width:100%;
+}
+
+footer p{
+	display: inline-block;
+	margin: 0;
+	font-size: 16px;
+}
+
+ul.horizontal-links{
+	list-style: none;
+	margin: 0;
+	padding: 10px;
+	font-size: 16px;
+}
+
+ul.horizontal-links li{
+	display: inline-block;
+	padding: 0 5px;
+}
+
+ul.horizontal-links li a{
+	color: #F7FCFC;
+}
+
+@media screen and (max-width: 500px){
+	h1{font-size: 60px;}
+	p{font-size: 16px;}
+	footer p.padding, ul.horizontal-links{font-size: 10px; padding: 5px;}
+	ul.horizontal-links li{padding: 0;}
+}
+
