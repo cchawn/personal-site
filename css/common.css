@@ -7,17 +7,23 @@
  * yellow - #FFEA59 - rgb(255, 234, 89)
  */
 
-* {
-	font-family: 'Raleway', 'Helvetica-Neue', Helvetica, Arial, sans-serif;
-}
-
 body{
 	background: #B7D8D8;
 	background-image: url("http://www.transparenttextures.com/patterns/inspiration-geometry.png");
+	font-family: 'Avenir', 'Helvetica', Helvetica, sans-serif;
 }
 
-h1{ font-family: 'Clicker Script', cursive; font-size: 100px; color: #F7FCFC;}
-p{ font-size: 24px; font-weight: 400; color: #F7FCFC;}
+h1{
+	font-family: 'Clicker Script', 'Avenir', 'Helvetica', Helvetica, sans-serif;
+	font-size: 100px;
+	color: #F7FCFC;
+}
+
+p{ 
+	font-size: 24px; 
+	font-weight: 400; 
+	color: #F7FCFC;
+}
 
 .centered{
 	position: absolute;
