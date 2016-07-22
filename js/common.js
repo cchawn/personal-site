@@ -20,13 +20,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	request.send();
 
-	$("#giphy-btn").click(function(e) {
+	$("#giphy-anchor").click(function(e) {
 		request.open('GET', 'http://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag='+q, true);
 		request.send();
+		$('#giphy').show();
 		e.preventDefault();
 	});
-
-	$("#blog-btn").click(function(e){
-		location.href = "http://blog.christina.codes";
-	})
 });
