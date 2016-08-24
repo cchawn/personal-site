@@ -17,7 +17,7 @@ $(document).ready(function () {
 	request.onerror = function() {
 		console.log('connection error');
 	};
-	
+
 	// request.send();
 
 	$("#giphy-anchor").click(function(e) {
@@ -27,5 +27,46 @@ $(document).ready(function () {
 		e.preventDefault();
 	});
 
-	var easter_egg = new Konami(function() { alert('Konami Code!')});
+	var $ken = $('.ken');
+	var $kenPos, $fireballPos;
+
+	function hadoken(){
+	  $ken.addClass('hadoken'); 
+	  setTimeout(function() { $ken.removeClass('hadoken'); }, 500); 
+	  setTimeout(function() {
+	      var $fireball = $('<div/>', { class:'fireball' });
+	      $fireball.appendTo($ken);
+	              
+	      var isFireballColision = function(){ 
+	          return $fireballPos.left + 75 > $(window).width() ? true : false;
+	      };
+	  
+	      var explodeIfColision = setInterval(function(){
+	                  
+	          $fireballPos = $fireball.offset();
+	          //console.log('fireballInterval:',$fireballPos.left);
+	  
+	          if (isFireballColision()) {
+	              $fireball.addClass('explode').removeClass('moving').css('marginLeft','+=22px'); 
+	              clearInterval(explodeIfColision);
+	              setTimeout(function() { $fireball.remove(); }, 500); 
+	          }
+	  
+	      }, 50);
+	  
+	      setTimeout(function() { $fireball.addClass('moving'); }, 20);
+	              
+	      setTimeout(function() { 
+	          $fireball.remove(); 
+	          clearInterval(explodeIfColision);
+	      }, 3020);
+	  
+	  }, (250));
+	};
+
+	$ken.hide(); // hide ken initially
+	var easter_egg = new Konami(function() {
+		$ken.show(); // reveal ken with konami code
+		hadoken();
+	});
 });
