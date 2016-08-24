@@ -64,7 +64,7 @@ $(document).ready(function () {
 	  }, (250));
 	};
 
-	$ken.hide(); // hide ken initially
+	// ken is hidden initially
 	var easter_egg = new Konami(function() {
 		$ken.show(); // reveal ken with konami code
 		hadoken();
