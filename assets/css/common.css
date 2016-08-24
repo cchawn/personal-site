@@ -1,12 +1,3 @@
-/* COLOUR SCHEME
- * "black" - #121515
- * "white" - #F7FCFC
- * light blue - #B7D8D8
- * purple - #b7c9db
- * green - #b7dbc9
- * yellow - #FFEA59 - rgb(255, 234, 89)
- */
-
 body{
 	font-family: 'Avenir', 'Helvetica', Helvetica, sans-serif;
 	background: #FFFFFF;
@@ -87,4 +78,3 @@ ul.horizontal-links li a{
 	footer p.padding, ul.horizontal-links{font-size: 10px; padding: 5px;}
 	ul.horizontal-links li{padding: 0;}
 }
-
