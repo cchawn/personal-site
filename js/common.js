@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		console.log('connection error');
 	};
 
-	request.send();
+	//request.send();
 
 	$("#giphy-anchor").click(function(e) {
 		request.open('GET', 'http://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag='+q, true);
