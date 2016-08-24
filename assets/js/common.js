@@ -17,7 +17,7 @@ $(document).ready(function () {
 	request.onerror = function() {
 		console.log('connection error');
 	};
-
+	
 	// request.send();
 
 	$("#giphy-anchor").click(function(e) {
