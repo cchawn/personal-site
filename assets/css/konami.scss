@@ -35,7 +35,20 @@ $spriteHeight:80px;
 @include anim($animName:hadoken, $steps:4, $animNbr:1, $animParams:.5s infinite);
 
 .stage {
-  position:absolute; top:50%;
+  position:absolute; top:50%; right:100%;
   width:60px; height:100px;
   transform: translateY(-50%);
+}
+
+.spin{
+  animation:spin 2s ease-in;
+}
+@keyframes spin { 100% { transform:rotate(-360deg); } }
+
+.message {
+  position: relative;
+  span {
+    display: inline-block;
+    // position: absolute;
+  }
 }

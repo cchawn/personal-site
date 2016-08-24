@@ -31,6 +31,7 @@ $(document).ready(function () {
 	var $kenPos, $fireballPos;
 
 	function hadoken(){
+	  $ken.show(); // reveal ken with konami code
 	  $ken.addClass('hadoken'); 
 	  setTimeout(function() { $ken.removeClass('hadoken'); }, 500); 
 	  setTimeout(function() {
@@ -64,9 +65,23 @@ $(document).ready(function () {
 	  }, (250));
 	};
 
-	// ken is hidden initially
+	function explodeMessage(){
+		var $message = $('.message');
+		var x, y;
+		var max = 2000;
+		$message.html($message.text().replace(/./g, "<span>$&</span>"));
+		$message.children().each(function(){
+			x = (Math.random() * max) - max/2;
+			y = (Math.random() * max) - max/2;
+			$(this).css({
+				'transform' : 'translate(' + x + 'px ,' + y +'px)'
+			});
+		});
+	};
+
 	var easter_egg = new Konami(function() {
-		$ken.show(); // reveal ken with konami code
 		hadoken();
+		explodeMessage();
+		setTimeout(function() {$('.logo').addClass('spin');}, 20);
 	});
 });

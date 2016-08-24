@@ -56,8 +56,20 @@
 .stage {
   position: absolute;
   top: 50%;
+  right: 100%;
   width: 60px;
   height: 100px;
   transform: translateY(-50%); }
+
+.spin {
+  animation: spin 2s ease-in; }
+
+@keyframes spin {
+  100% {
+    transform: rotate(-360deg); } }
+.message {
+  position: relative; }
+  .message span {
+    display: inline-block; }
 
 /*# sourceMappingURL=konami.css.map */
