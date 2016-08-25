@@ -28,7 +28,6 @@ a, a:hover, a:visited, a:focus{
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	/*width: 80%;*/
 }
 
 .padding{
@@ -38,7 +37,6 @@ a, a:hover, a:visited, a:focus{
 .message{
 	max-width: 700px;
 	min-height: 100px;
-	min-width: 500px;
 }
 
 #giphy{
@@ -79,8 +77,16 @@ ul.horizontal-links li a{
 	color: #444444;
 }
 
-@media screen and (max-width: 500px){
-	h1{font-size: 60px;}
+@media screen and (max-width: 975px){
+	h1{font-size: 30px;}
+	#emoji {min-width: 30px;}
+}
+
+@media screen and (max-width: 585px){
+	h1{font-size: 24px;}
+	#emoji {min-width: 24px;}
+	.centered{width:100%;}
+	p.message{padding:0 20px;}
 	p{font-size: 16px;}
 	footer p.padding, ul.horizontal-links{font-size: 10px; padding: 5px;}
 	ul.horizontal-links li{padding: 0;}

@@ -35,7 +35,7 @@ $spriteHeight:80px;
 @include anim($animName:hadoken, $steps:4, $animNbr:1, $animParams:.5s infinite);
 
 body { 
-  height: 100vh; width: 100vh; overflow: hidden;
+  height: 100vh; overflow: hidden;
   background-color: #FFF;
   &.disco {
     animation: disco 3s linear infinite;
@@ -63,6 +63,9 @@ body {
   position:absolute; top:50%; right:100%;
   width:60px; height:100px;
   transform: translateY(-50%);
+}
+@media screen and (max-width: 585px){
+  .stage{right:80%};
 }
 
 .spin{

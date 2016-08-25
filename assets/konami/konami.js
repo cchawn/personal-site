@@ -55,7 +55,7 @@ $(document).ready(function(){
 				'opacity' : 0
 			}, 2000, function(){
 				reassembleMessage($(this).text(), HIRE_ME_PLS, $(this));
-				$message.css({'left':'40%'});
+				$message.css({'left':'40%','width':'100px'});
 			});
 		});
 	};
@@ -66,9 +66,9 @@ $(document).ready(function(){
 	for (var i = 0; i < HIRE_ME_PLS.length; i++){ COUNT[HIRE_ME_PLS[i]] = true; }
 	
 	function reassembleMessage(char, str, element){
+		element.css({'position':'absolute'});
 		if (str.indexOf(char) != '-1'){
 			if (COUNT[char] || (char == 'e' && E_COUNT == 1)){
-				element.css({'position':'absolute'});
 				switch (char) {
 					case 'h':
 						element.animate({'top':'0px','left':'0','opacity':1}, 1000);
@@ -107,6 +107,7 @@ $(document).ready(function(){
 				return true;
 			}
 		}
+		element.css({'top':'0','left':'0'});
 		return false;
 	}
 
@@ -118,7 +119,7 @@ $(document).ready(function(){
 
 	var easter_egg = new Konami(function() {
 		hadoken();
-		if (!$('.logo').hasClass('spin');) explodeMessage();
+		if (!$('.logo').hasClass('spin')) explodeMessage();
 		if (!$('body').hasClass('disco')) setTimeout(function() { disco(); }, 2000);
 	});
 	console.log('⬆️ ⬆️ ⬇️ ⬇️'); // hint
