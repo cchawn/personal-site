@@ -2,7 +2,6 @@ $(document).ready(function(){
 	/**************************/
 	/* Konami Code Easter Egg */
 	/**************************/
-
 	var $ken = $('.ken');
 	var $kenPos, $fireballPos;
 
@@ -122,4 +121,5 @@ $(document).ready(function(){
 		explodeMessage();
 		if (!$('body').hasClass('disco')) setTimeout(function() { disco(); }, 2000);
 	});
+	console.log('⬆️ ⬆️ ⬇️ ⬇️'); // hint
 });
