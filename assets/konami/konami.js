@@ -118,7 +118,7 @@ $(document).ready(function(){
 
 	var easter_egg = new Konami(function() {
 		hadoken();
-		explodeMessage();
+		if (!$('.logo').hasClass('spin');) explodeMessage();
 		if (!$('body').hasClass('disco')) setTimeout(function() { disco(); }, 2000);
 	});
 	console.log('⬆️ ⬆️ ⬇️ ⬇️'); // hint
