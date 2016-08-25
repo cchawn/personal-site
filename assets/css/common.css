@@ -1,12 +1,22 @@
 body{
 	font-family: 'Avenir', 'Helvetica', Helvetica, sans-serif;
 	background: #FFFFFF;
+	color: #444444;
+}
+
+h1 {
+	font-size: 50px;
+	text-transform: uppercase;
+}
+
+#emoji {
+	display: inline-block;
+	min-width: 50px;
 }
 
 p{ 
 	font-size: 24px; 
 	font-weight: 400; 
-	color: #444444;
 }
 
 a, a:hover, a:visited, a:focus{
@@ -27,6 +37,8 @@ a, a:hover, a:visited, a:focus{
 
 .message{
 	max-width: 700px;
+	min-height: 100px;
+	min-width: 500px;
 }
 
 #giphy{
@@ -37,11 +49,6 @@ a, a:hover, a:visited, a:focus{
 	max-width: 400px;
 	width: 100%;
 	height: auto;
-}
-
-img.logo{
-	width: 100%;
-	max-width: 500px;
 }
 
 footer{
