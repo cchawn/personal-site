@@ -113,14 +113,13 @@ $(document).ready(function(){
 
 	function disco(){
 		$('body').addClass('disco');
-		$('.disco-ball').slideDown('slow');
-		$('.disco-ball').append('<audio id="audio" src="./assets/konami/take-on-me.m4a" autoplay></audio>');
+		// $('.disco-ball').slideDown('slow');
+		// $('.disco-ball').append('<audio id="audio" src="./assets/konami/take-on-me.m4a" autoplay></audio>');
 	}
 
 	var easter_egg = new Konami(function() {
 		hadoken();
 		if (!$('.logo').hasClass('spin')) explodeMessage();
-		if (!$('body').hasClass('disco')) setTimeout(function() { disco(); }, 2000);
 	});
 	console.log('⬆️ ⬆️ ⬇️ ⬇️'); // hint
 });

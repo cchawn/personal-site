@@ -84,7 +84,6 @@ ul.horizontal-links li a{
 
 @media screen and (max-width: 585px){
 	h1{font-size: 24px;}
-	#emoji {min-width: 24px;}
 	.centered{width:100%;}
 	p.message{padding:0 20px;}
 	p{font-size: 16px;}
