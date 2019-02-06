@@ -1,92 +1,110 @@
-body{
-	font-family: 'Avenir', 'Helvetica', Helvetica, sans-serif;
-	background: #FFFFFF;
-	color: #444444;
+body {
+  font-family: 'Avenir', 'Helvetica', Helvetica, sans-serif;
+  background: #FFFFFF;
+  color: #444444;
 }
 
 h1 {
-	font-size: 50px;
-	text-transform: uppercase;
+  font-size: 50px;
+  text-transform: uppercase;
+  line-height: 1.4;
 }
 
 #emoji {
-	display: inline-block;
-	min-width: 50px;
+  display: inline-block;
+  min-width: 50px;
 }
 
-p{ 
-	font-size: 24px; 
-	font-weight: 400; 
+p {
+  font-size: 24px;
+  font-weight: 400;
 }
 
-a, a:hover, a:visited, a:focus{
-	color: #999999;
+a, a:hover, a:visited, a:focus {
+  color: #999999;
 }
 
-.centered{
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
-.padding{
-	padding:10px;
+.message {
+  max-width: 700px;
+  min-height: 100px;
 }
 
-.message{
-	max-width: 700px;
-	min-height: 100px;
+#giphy {
+  display: none;
 }
 
-#giphy{
-	display: none;
+#giphy img {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
 }
 
-#giphy img{
-	max-width: 400px;
-	width: 100%;
-	height: auto;
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
 }
 
-footer{
-	position:absolute;
-	bottom:0;
-	width:100%;
+footer p {
+  display: inline-block;
+  margin: 0;
+  font-size: 16px;
 }
 
-footer p{
-	display: inline-block;
-	margin: 0;
-	font-size: 16px;
+ul.horizontal-links {
+  list-style: none;
+  margin: 0;
+  padding: 10px;
+  font-size: 16px;
 }
 
-ul.horizontal-links{
-	list-style: none;
-	margin: 0;
-	padding: 10px;
-	font-size: 16px;
+ul.horizontal-links li {
+  display: inline-block;
+  padding: 0 5px;
 }
 
-ul.horizontal-links li{
-	display: inline-block;
-	padding: 0 5px;
+ul.horizontal-links li a {
+  color: #444444;
 }
 
-ul.horizontal-links li a{
-	color: #444444;
+@media screen and (max-width: 975px) {
+  h1 {
+    font-size: 30px;
+  }
+
+  #emoji {
+    min-width: 30px;
+  }
 }
 
-@media screen and (max-width: 975px){
-	h1{font-size: 30px;}
-	#emoji {min-width: 30px;}
-}
+@media screen and (max-width: 585px) {
+  h1 {
+    font-size: 24px;
+  }
 
-@media screen and (max-width: 585px){
-	h1{font-size: 24px;}
-	.centered{width:100%;}
-	p.message{padding:0 20px;}
-	p{font-size: 16px;}
-	footer p.padding, ul.horizontal-links{font-size: 10px; padding: 5px;}
-	ul.horizontal-links li{padding: 0;}
+  .centered {
+    width: 100%;
+  }
+
+  p.message {
+    padding: 0 20px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  ul.horizontal-links li {
+    padding: 0;
+  }
 }
