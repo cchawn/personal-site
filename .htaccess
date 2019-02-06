@@ -1,6 +1,8 @@
-RewriteEngine On
-RewriteCond %{SERVER_PORT} !^443$
-RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
-
+RewriteEngine on
+RewriteOptions inherit
 Options -Indexes
+
+##### Add WWW ###############################################
+RewriteCond %{HTTP_HOST} ^christina.codes$ [NC]
+RewriteRule ^(.*)$ https://www.christina.codes/$1 [R=301,L]
 
