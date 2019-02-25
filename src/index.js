@@ -1,4 +1,5 @@
 import './favicon.ico';
+import './og.jpg';
 import './index.html';
 import './index.scss';
 
