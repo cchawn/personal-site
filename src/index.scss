@@ -1,15 +1,26 @@
 $base-font-size: 24px;
 
 body {
-  background: #FFF;
-  color: #111;
   font-family: 'Avenir', 'Helvetica', Helvetica, sans-serif;
   font-size: $base-font-size;
   margin: 0;
 
+  &:not(.dark-mode) {
+    background: #FFF;
+    color: #111;
+
+    #light-mode {
+      display: none;
+    }
+  }
+
   &.dark-mode {
     background: #111;
     color: #FFF;
+
+    #dark-mode {
+      display: none;
+    }
   }
 }
 
@@ -36,4 +47,10 @@ h1 {
     display: inline-block;
     min-width: $base-font-size + 1px;
   }
+}
+
+button {
+  border: none;
+  background: transparent;
+  font-size: $base-font-size;
 }

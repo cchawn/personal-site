@@ -13,4 +13,12 @@ function emojiFun() {
   }, 250);
 }
 
-document.addEventListener('DOMContentLoaded', emojiFun);
+function toggleMode() {
+  document.querySelector('body').classList.toggle('dark-mode');
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  document.getElementById('dark-mode').onclick = toggleMode;
+  document.getElementById('light-mode').onclick = toggleMode;
+  emojiFun();
+});
