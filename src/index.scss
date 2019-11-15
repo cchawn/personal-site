@@ -6,6 +6,8 @@ body {
   font-family: 'Avenir', 'Helvetica', Helvetica, sans-serif;
   font-size: $base-font-size;
   margin: 0;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
 
   &:not(.dark-mode) {
     background: $light;
