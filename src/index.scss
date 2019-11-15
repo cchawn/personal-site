@@ -1,6 +1,6 @@
 $base-font-size: 30px;
 $small-font-size: 14px;
-$accent: #999;
+$accent: rgba(153, 153, 153, 0.4);
 $dark: #111;
 $light: #FFF;
 $transition-duration: .5s;
@@ -44,6 +44,7 @@ body {
 
 a, a:visited {
   color: $dark;
+  position: relative;
   text-decoration: none;
   transition: color $transition-duration ease-in;
 
@@ -51,9 +52,26 @@ a, a:visited {
     color: $light;
   }
 
+  &:after {
+    background-color: $accent;
+    content: '';
+    display: block;
+    height: $small-font-size;
+    position: absolute;
+    top: 50%;
+    transform: scaleX(0);
+    transform-origin: right center;
+    width: 90%;
+    transition: .55s transform cubic-bezier(.19,1,.22,1)
+  }
+
   &:hover, &:focus {
-    color: #999;
     outline: none;
+
+    &:after {
+      transform: scaleX(1);
+      transform-origin: left center;
+    }
   }
 }
 
