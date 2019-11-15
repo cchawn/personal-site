@@ -8,6 +8,10 @@ $transition-duration: .5s;
 ::-moz-selection{ background: $accent; color:$light; text-shadow: none; }
 ::selection { background:$accent; color:$light; text-shadow: none; }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Avenir', 'Helvetica', Helvetica, sans-serif;
   font-size: $base-font-size;
@@ -90,7 +94,7 @@ h1 {
 
   #emoji {
     display: inline-block;
-    min-width: $base-font-size + 1px;
+    min-width: $base-font-size * 1.5;
   }
 }
 
@@ -132,9 +136,10 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: $base-font-size auto;
+  margin: 0 auto;
   max-width: 60%;
   min-height: 100vh;
+  padding: $base-font-size 0;
 
   div { max-width: 60%; }
 }
