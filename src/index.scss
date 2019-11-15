@@ -7,11 +7,16 @@ body {
   font-family: 'Avenir', 'Helvetica', Helvetica, sans-serif;
   font-size: $base-font-size;
   margin: 0;
+  opacity: 0;
   transition-duration: $transition-duration;
-  transition-property: background, color;
+  transition-property: background, color, opacity;
   transition-timing-function: ease-in;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
+
+  &.loaded {
+    opacity: 1;
+  }
 
   &:not(.dark-mode) {
     background: $light;
@@ -50,11 +55,11 @@ a, a:visited {
 h1, p, ul {
   margin: 0;
   padding: 0;
+  line-height: 1.5;
 }
 
 h1 {
   font-size: $base-font-size;
-  line-height: 1.4;
   text-transform: uppercase;
 
   #emoji {

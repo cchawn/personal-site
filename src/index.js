@@ -19,5 +19,6 @@ function toggleMode() {
 
 document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('toggle-mode').onclick = toggleMode;
+  document.querySelector('body').classList.add('loaded');
   emojiFun();
 });
