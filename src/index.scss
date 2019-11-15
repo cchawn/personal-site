@@ -37,6 +37,11 @@ a, a:visited {
   }
 }
 
+h1, p, ul {
+  margin: 0;
+  padding: 0;
+}
+
 h1 {
   font-size: $base-font-size;
   font-weight: 400;
@@ -49,7 +54,11 @@ h1 {
   }
 }
 
-.toggle-buttons {
+ul {
+  list-style: none;
+}
+
+footer {
   bottom: 0;
   position: absolute;
   right: 0;
