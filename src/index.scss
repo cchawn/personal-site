@@ -1,8 +1,12 @@
 $base-font-size: 30px;
 $small-font-size: 14px;
+$accent: #999;
 $dark: #111;
 $light: #FFF;
 $transition-duration: .5s;
+
+::-moz-selection{ background: $accent; color:$light; text-shadow: none; }
+::selection { background:$accent; color:$light; text-shadow: none; }
 
 body {
   font-family: 'Avenir', 'Helvetica', Helvetica, sans-serif;
