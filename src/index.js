@@ -18,7 +18,6 @@ function toggleMode() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  document.getElementById('dark-mode').onclick = toggleMode;
-  document.getElementById('light-mode').onclick = toggleMode;
+  document.getElementById('toggle-mode').onclick = toggleMode;
   emojiFun();
 });
