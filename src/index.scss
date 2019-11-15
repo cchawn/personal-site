@@ -106,7 +106,7 @@ ul {
 
 footer {
   bottom: 0;
-  position: absolute;
+  position: fixed;
   right: 0;
 
   button {
@@ -115,17 +115,13 @@ footer {
     border: none;
     cursor: pointer;
     font-size: 30px;
-    height: 38px;
+    height: 34px;
     padding: 0;
-    width: 38px;
+    width: 34px;
 
     &:focus {
+      background: $accent;
       outline: none;
-      border: 2px solid $dark;
-    }
-
-    .dark-mode &:focus {
-      border: 2px solid $light;
     }
   }
 }
@@ -134,10 +130,18 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 0 auto;
+  margin: $base-font-size auto;
   max-width: 60%;
   min-height: 100vh;
 
   div { max-width: 60%; }
+}
+
+@media only screen and (max-width: 822px) {
+  .content {
+    max-width: 80%;
+
+    div { max-width: 100%; }
+  }
 }
 
