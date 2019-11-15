@@ -49,8 +49,15 @@ h1 {
   }
 }
 
-button {
-  border: none;
-  background: transparent;
-  font-size: $base-font-size;
+.toggle-buttons {
+  bottom: 0;
+  position: absolute;
+  right: 0;
+
+  button {
+    background: transparent;
+    border: none;
+    font-size: $base-font-size;
+  }
 }
+
