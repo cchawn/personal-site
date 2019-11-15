@@ -32,7 +32,6 @@ module.exports = {
             loader: 'postcss-loader',
             options: {
               plugins: [
-                autoprefixer({ browsers: ['> 1%', 'IE 10', 'Safari 9'] }),
                 cssnano,
               ],
             },
