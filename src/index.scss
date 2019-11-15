@@ -1,4 +1,6 @@
 $base-font-size: 30px;
+$dark: #111;
+$light: #FFF;
 
 body {
   font-family: 'Avenir', 'Helvetica', Helvetica, sans-serif;
@@ -6,8 +8,8 @@ body {
   margin: 0;
 
   &:not(.dark-mode) {
-    background: #FFF;
-    color: #111;
+    background: $light;
+    color: $dark;
 
     #light-mode {
       display: none;
@@ -15,8 +17,8 @@ body {
   }
 
   &.dark-mode {
-    background: #111;
-    color: #FFF;
+    background: $dark;
+    color: $light;
 
     #dark-mode {
       display: none;
@@ -25,15 +27,16 @@ body {
 }
 
 a, a:visited {
-  color: #111;
+  color: $dark;
   text-decoration: none;
 
   .dark-mode & {
-    color: #FFF;
+    color: $light;
   }
 
   &:hover, &:focus {
     color: #999;
+    outline: none;
   }
 }
 
@@ -64,8 +67,22 @@ footer {
 
   button {
     background: transparent;
+    border-radius: 100%;
     border: none;
-    font-size: $base-font-size;
+    cursor: pointer;
+    font-size: 30px;
+    height: 38px;
+    padding: 0;
+    width: 38px;
+
+    &:focus {
+      outline: none;
+      border: 2px solid $dark;
+    }
+
+    .dark-mode &:focus {
+      border: 2px solid $light;
+    }
   }
 }
 
