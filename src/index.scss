@@ -82,8 +82,10 @@ h1, h2, p, ul {
 }
 
 h1 {
+  display: inline-block;
   font-size: $base-font-size;
   margin: 0 0 $small-font-size;
+  text-align: center;
   text-transform: uppercase;
 
   #emoji {
