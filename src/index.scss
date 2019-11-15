@@ -1,4 +1,5 @@
 $base-font-size: 30px;
+$small-font-size: 14px;
 $dark: #111;
 $light: #FFF;
 $transition-duration: .5s;
@@ -52,7 +53,7 @@ a, a:visited {
   }
 }
 
-h1, p, ul {
+h1, h2, p, ul {
   margin: 0;
   padding: 0;
   line-height: 1.5;
@@ -60,12 +61,21 @@ h1, p, ul {
 
 h1 {
   font-size: $base-font-size;
+  margin: 0 0 $small-font-size;
   text-transform: uppercase;
 
   #emoji {
     display: inline-block;
     min-width: $base-font-size + 1px;
   }
+}
+
+h2 {
+  font-size: $small-font-size;
+  font-weight: 400;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  margin: ($base-font-size * 2) 0 $small-font-size 0;
 }
 
 ul {
