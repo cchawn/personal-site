@@ -91,7 +91,7 @@ h1 {
   display: inline-block;
   font-size: $base-font-size;
   letter-spacing: 0.5rem;
-  margin: 50% 0 $small-font-size;
+  margin: 0 0 $small-font-size;
   text-align: center;
   text-transform: uppercase;
   white-space: nowrap;
@@ -141,7 +141,7 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 0 auto;
+  margin: 25vh auto;
   max-width: 60%;
   min-height: 100vh;
   padding: $base-font-size 0;
