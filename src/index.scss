@@ -1,13 +1,12 @@
 $base-font-size: 30px;
 $mobile-font-size: 20px;
-$small-font-size: 12px;
+$small-font-size: 14px;
 $accent: rgba(153, 153, 153, 0.4);
 $dark: #111;
 $light: #FFF;
 $transition-duration: .5s;
 
-::-moz-selection{ background: $accent; color:$light; text-shadow: none; }
-::selection { background:$accent; color:$light; text-shadow: none; }
+::-moz-selection, ::selection { background: $accent; color:$light; text-shadow: none; }
 
 * {
   box-sizing: border-box;
@@ -102,12 +101,16 @@ h1 {
   }
 }
 
-h2 {
+h2, label {
   font-size: $small-font-size;
   font-weight: 400;
   letter-spacing: 0.5rem;
   text-transform: uppercase;
   margin: ($base-font-size * 2) 0 $small-font-size 0;
+}
+
+p {
+  margin: 0 0 .5em 0;
 }
 
 ul {
@@ -147,6 +150,55 @@ footer {
   padding: $base-font-size 0;
 
   div { max-width: 60%; }
+}
+
+body.holidays {
+  $dark: #15200C;
+  $light: #EBEEE8;
+  $accent: rgba(114, 133, 97, 0.4);
+  background-color: $dark;
+  color: $light;
+
+  ::-moz-selection, ::selection { background: $accent; }
+
+  a, a:visited {
+    color: $light;
+
+    &:after {
+      background-color: $accent;
+    }
+  }
+
+  form {
+    margin-top: $base-font-size * 2;
+
+    label {
+      display: block;
+      margin: $base-font-size 0 $small-font-size 0;
+    }
+
+    input, textarea {
+      background-color: $light;
+      border: none;
+      color: $dark;
+      display: block;
+      font-size: $small-font-size;
+      margin-bottom: 1.4em;
+      padding: $small-font-size;
+      width: 100%;
+    }
+
+    textarea {
+      height: 100px;
+      resize: none;
+    }
+
+    input[type="submit"] {
+      background-color: $accent;
+      color: $light;
+      cursor: pointer;
+    }
+  }
 }
 
 @media only screen and (max-width: 822px) {

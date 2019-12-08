@@ -1,16 +1,15 @@
-import './favicon.ico';
-import './og.jpg';
-import './index.html';
 import './index.scss';
 
 function emojiFun() {
   const EMOJIS = ['✨', '✌︎', '🌚', '♕', '⚡️', '☹', '💻'];
   let ind = 1;
   const target = document.querySelector('#emoji');
-  setInterval(() => {
-    target.innerHTML = EMOJIS[ind];
-    ind = (ind + 1) % EMOJIS.length;
-  }, 250);
+  if (target != null) {
+    setInterval(() => {
+      target.innerHTML = EMOJIS[ind];
+      ind = (ind + 1) % EMOJIS.length;
+    }, 250);
+  }
 }
 
 function toggleMode() {
@@ -18,7 +17,8 @@ function toggleMode() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  document.getElementById('toggle-mode').onclick = toggleMode;
+  const button = document.getElementById('toggle-mode');
+  if (button != null) { button.onclick = toggleMode; }
   document.querySelector('body').classList.add('loaded');
   emojiFun();
 });
