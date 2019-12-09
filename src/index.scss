@@ -163,6 +163,7 @@ body.holidays {
 
   a, a:visited {
     color: $light;
+    font-weight: bold;
 
     &:after {
       background-color: $accent;
